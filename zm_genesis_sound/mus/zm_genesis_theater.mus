@@ -1,0 +1,95 @@
+{
+    "Name": "zm_genesis_theater",
+    "StateArray": [
+        {
+            "Name": "round_start_theater_1",
+            "IntroAsset": {
+                "AliasName": "mus_round_start_theater_1_intro",
+                "Looping": false,
+                "CompleteLoop": false,
+                "RemoveAfterPlay": false,
+                "PlayAsFirstRandom": false,
+                "StartSync": false,
+                "StopSync": false,
+                "CompleteOnStop": false,
+                "LoopStartOffset": 15245,
+                "BPM": 120,
+                "AssetType": 0,
+                "LoopNumber": 1,
+                "Order": 0,
+                "StartDelayBeats": 0,
+                "StartFadeBeats": 0,
+                "StopDelayBeats": 0,
+                "StopFadeBeats": 4,
+                "Meter": 4
+            },
+            "LoopAssets": [],
+            "Order": 0,
+            "IsRandom": false,
+            "IsSequential": true,
+            "SkipPreviousExit": false
+        },
+        {
+            "Name": "round_end_theater_1",
+            "IntroAsset": {
+                "AliasName": "mus_round_end_theater_1_intro",
+                "Looping": false,
+                "CompleteLoop": false,
+                "RemoveAfterPlay": false,
+                "PlayAsFirstRandom": false,
+                "StartSync": false,
+                "StopSync": false,
+                "CompleteOnStop": false,
+                "LoopStartOffset": 3756,
+                "BPM": 120,
+                "AssetType": 0,
+                "LoopNumber": 1,
+                "Order": 0,
+                "StartDelayBeats": 0,
+                "StartFadeBeats": 0,
+                "StopDelayBeats": 0,
+                "StopFadeBeats": 4,
+                "Meter": 4
+            },
+            "LoopAssets": [],
+            "Order": 1,
+            "IsRandom": false,
+            "IsSequential": true,
+            "SkipPreviousExit": false
+        },
+        {
+            "Name": "round_start_theater_2",
+            "IntroAsset": {
+                "AliasName": "mus_round_start_theater_2_intro",
+                "Looping": false,
+                "CompleteLoop": false,
+                "RemoveAfterPlay": false,
+                "PlayAsFirstRandom": false,
+                "StartSync": false,
+                "StopSync": false,
+                "CompleteOnStop": true,
+                "LoopStartOffset": 595967,
+                "BPM": 120,
+                "AssetType": 0,
+                "LoopNumber": 1,
+                "Order": 0,
+                "StartDelayBeats": 0,
+                "StartFadeBeats": 0,
+                "StopDelayBeats": 0,
+                "StopFadeBeats": 0,
+                "Meter": 4
+            },
+            "LoopAssets": [],
+            "Order": 2,
+            "IsRandom": false,
+            "IsSequential": true,
+            "SkipPreviousExit": false
+        }
+    ],
+    "StateNames": [
+        "round_start_theater_1",
+        "round_end_theater_1",
+        "round_start_theater_2"
+    ],
+    "LoopIndex": 3
+}

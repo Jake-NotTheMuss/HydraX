@@ -1,0 +1,1 @@
+Name,MasterReturn,EarlyPreDelayMs,EarlyInputLpf,EarlyFeedback,EarlySmear,EarlyBaseDelayMs,EarlyReturn,NearInputLpf,NearFeedback,NearReturn,NearLowDamp,NearHighDamp,NearDecayTime,NearSmear,NearPreDelayMs,FarInputLpf,FarFeedback,FarReturn,FarLowDamp,FarHighDamp,FarDecayTime,FarSmear,FarPreDelayMs,

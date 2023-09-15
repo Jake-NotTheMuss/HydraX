@@ -1,0 +1,24 @@
+diff --git a/src/HydraX.Library/Games/BlackOps3/AssetPools/Sound.cs b/src/HydraX.Library/Games/BlackOps3/AssetPools/Sound.cs
+index 5421d19..15cf55b 100644
+--- a/src/HydraX.Library/Games/BlackOps3/AssetPools/Sound.cs
++++ b/src/HydraX.Library/Games/BlackOps3/AssetPools/Sound.cs
+@@ -1349,8 +1349,17 @@ namespace HydraX.Library
+             {
+                 var header = instance.Reader.ReadStruct<SoundAsset>((long)asset.Data);
+ 
+-                if (asset.Name != instance.Reader.ReadNullTerminatedString(header.NamePointer).Split(':')[0])
+-                    throw new Exception("The asset at the expect memory address has changed. Press the Load Game button to refresh the asset list.");
++                {
++                    string fullName = instance.Reader.ReadNullTerminatedString(header.NamePointer);
++                    string name = fullName.Split(':')[0];
++                    if (asset.Name != name)
++                    {
++                        if (asset.Name == fullName)
++                            asset.Name = name;
++                        else
++                            throw new Exception("The asset at the expect memory address has changed. Press the Load Game button to refresh the asset list.");
++                    }
++                }
+ 
+                 Directory.CreateDirectory(instance.SoundZoneFolder);
+                 Directory.CreateDirectory(instance.SoundMusicFolder);
